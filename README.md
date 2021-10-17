@@ -12,6 +12,12 @@ It features an example layout structure that keeps things tidy in your applicati
 Browse around the `src` folder and familiarize yourself with the layout. Several example
 files are included, which demonstrate how you would use this layout.
 
+### Table of Contents
+
+- [Quick Start](#quick-start)
+- [Structure](#structure)
+- [Style Guide](#style-guide)
+
 ## Quick Start
 
 - Create a repository using this template by clicking "use template" at the top.
@@ -41,6 +47,9 @@ Here is a pruned tree structure of this template:
 └── tsconfig.paths.json
 </pre>
 
+<details>
+  <summary>Components</summary>
+
 ### Components
 
 This folder will contain all of your ordinary components. Each component should be its
@@ -59,6 +68,10 @@ have their own alias, `@UI`.
 ```typescript
 import Button from '@UI/Button';
 ```
+</details>
+
+<details>
+  <summary>Hooks</summary>
 
 ### Hooks
 
@@ -77,6 +90,10 @@ are re-exported so that they may be included using the `@hooks` alias alone.
 ```typescript
 import { useWait } from '@hooks';
 ```
+</details>
+
+<details>
+  <summary>Adapters</summary>
 
 ### Adapters
 
@@ -89,6 +106,10 @@ import fetchDocument from '@adapters/document';
 // or
 import { fetchDocument } from '@adapters';
 ```
+</details>
+
+<details>
+  <summary>Assets</summary>
 
 ### Assets
 
@@ -99,11 +120,19 @@ import lightning from '@assets/lightning.svg';
 
 const image = <img src={ lightning } alt="lightning" />
 ```
+</details>
+
+<details>
+  <summary>Public</summary>
 
 ### Public
 
 This is pretty self explanatory - it contains the `index.html` containing the root div where the React application is initially mounted. It also has the support files like `favicon.ico`, `robots.txt`, etc.
+</details>
 
+<details>
+  <summary>Configuration Files</summary>
+  
 ### Configuration Files
 
 #### Craco
@@ -119,7 +148,7 @@ This is pretty self explanatory - it contains the `index.html` containing the ro
 `tsconfig.json` provides the configuration for the Typescript compiler. You can change this to modify the behavior of the compiler, such as allowing certain language features or enabling certain lints.
 
 `tsconfig.paths.json` is a special file that contains all of our path aliases. You can modify these to add or remove path aliases, which is a *must* as your project structure grows.
-
+</details>
 
 ## Aliases
 
