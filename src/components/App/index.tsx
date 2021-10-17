@@ -1,4 +1,4 @@
-import MyContext from '@components/contexts/MyContext';
+import { MyContext } from '@contexts';
 import { useWait } from '@hooks';
 import { Button } from '@UI/Button';
 import React from 'react';
