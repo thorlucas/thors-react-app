@@ -16,6 +16,7 @@ There are a number of path aliases defined in `tsconfig.paths.json`. The use of 
 |--|--|
 | `@components/*` | `./src/components/*` |
 | `@UI/*` | `./src/components/UI/*` |
+| `@contexts/*` | `./src/components/contexts/*` |
 | `@hooks` | `./src/hooks/index.ts` |
 | `@hooks/*` | `./src/hooks/*` |
 
