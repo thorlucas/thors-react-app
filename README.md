@@ -15,6 +15,7 @@ files are included, which demonstrate how you would use this layout.
 ### Table of Contents
 
 - [Quick Start](#quick-start)
+- [Aliases](#aliases)
 - [Structure](#structure)
 - [Style Guide](#style-guide)
 
