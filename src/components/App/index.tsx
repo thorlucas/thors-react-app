@@ -1,5 +1,6 @@
 import React from 'react';
 
+import lightning from '@assets/lightning.svg';
 import Button from '@UI/Button';
 import { MyContext } from '@contexts';
 import { useWait } from '@hooks';
@@ -24,6 +25,7 @@ const App: React.FC = () => {
 
 		<div className="w-100 h-screen flex justify-center items-center">
 			<div className="px-12 py-8 bg-white rounded-lg shadow-md">
+				<img src={ lightning } alt="Lightning!" className="h-12 mb-4 mx-auto"/>
 
 				<h1 className="mb-2 text-3xl font-semibold">
 					Hello, world!
