@@ -1,4 +1,4 @@
-import { Button } from '@components/UI/Button';
+import { Button } from '@UI/Button';
 import React from 'react';
 
 const App: React.FC = () => {
