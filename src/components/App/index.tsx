@@ -1,3 +1,4 @@
+import { Button } from '@components/UI/Button';
 import React from 'react';
 
 const App: React.FC = () => {
@@ -7,8 +8,13 @@ const App: React.FC = () => {
 			<h1 className="mb-2 text-3xl font-semibold">
 				Hello, world!
 			</h1>
-			<div>
+			<div className="mb-4">
 				<p>Welcome to my React Application!</p>
+			</div>
+			<div>
+				<Button role='primary'>
+					Hello!
+				</Button>
 			</div>
 		</div>
 	</div>
