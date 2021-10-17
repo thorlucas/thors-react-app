@@ -83,6 +83,11 @@ import Foo from '@components/Foo';
   > ```typescript
   > type MyCallback = (value: string): void;
   > function myFunction(cb: MyCallback) { ... }
+  HTML component props:
+  > ```typescript-react
+  > const type: ButtonHTMLAttributes<HTMLButtonElement>['type'] = 'submit';
+  > <button type={ type }>
+  > ```
 
 - **The `children` prop**:
   - Should always be optional (`children?`), unless specifically required.
