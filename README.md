@@ -7,6 +7,14 @@ This is my minimal React application starter-kit consisting of the following sta
 - **PostCSS** with **TailwindCSS**
 - **Craco**
 
+## Quick Start
+
+- Create a repository using this template by clicking "use template" at the top.
+- Clone your new repo locally.
+- Run `yarn` to install all dependencies.
+- Run `yarn start` to launch the development server.
+- Edit away! Any changes made are automatically rendered in the browser.
+
 ## Aliases
 
 There are a number of path aliases defined in `tsconfig.paths.json`. The use of these aliases is heavily encouraged for readibility. You are also encouraged to add new aliases as your project structure grows.
