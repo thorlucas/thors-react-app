@@ -24,6 +24,18 @@ This is my minimal React application starter-kit consisting of the following sta
     > myArray['data'];
     > <div className={ foo ? 'bar' : 'baz' }>
     > import Foo from 'foo';
+  - Use of double quotations for JSX element props is acceptable.
+    > ```typescript-react
+    > <div className="foo bar baz">
+    > ```
+- **Inline braces should be spaced.**
+  > ```typescript
+  > const foo = { baz: 'bar' };
+  > // NOT {baz: 'bar'}
+- **JSX element props should *not* be spaced** around the equals sign.
+  > ```typescript-react
+  > <input type="text" />
+  > ```
 
 ### Imports
 
