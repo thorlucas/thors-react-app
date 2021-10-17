@@ -5,6 +5,8 @@
 			"@components/*": ["src/components/*"],
 			"@UI/*": ["src/components/UI/*"],
 
+			"@assets/*": ["src/assets/*"],
+
 			"@contexts": ["src/contexts/index.ts"],
 			"@contexts/*": ["src/contexts/*"],
 
