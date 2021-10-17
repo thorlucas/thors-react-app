@@ -84,6 +84,19 @@ import Foo from '@components/Foo';
   > type MyCallback = (value: string): void;
   > function myFunction(cb: MyCallback) { ... }
 
+- **The `children` prop**:
+  - Should always be optional (`children?`), unless specifically required.
+  - Should be of type `React.ReactNode` unless something more specific is required.
+  > ```typescript
+  > interface MyProps: {
+  >     children?: React.ReactNode,
+  > }
+  > // ...
+  > <div>
+  >     { children }
+  > </div>
+  >```
+
 - **Void return signatures** do not need to be typed.
   
 - **Define and export types where they naturally belong.**
