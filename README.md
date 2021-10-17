@@ -44,7 +44,7 @@ import Foo from '@components/Foo';
     > <div className={ foo ? 'bar' : 'baz' }>
     > import Foo from 'foo';
   - Use of double quotations for JSX element props is acceptable.
-    > ```typescript-react
+    > ```tsx
     > <div className="foo bar baz">
     > ```
 - **Inline braces should be spaced.**
@@ -52,7 +52,7 @@ import Foo from '@components/Foo';
   > const foo = { baz: 'bar' };
   > // NOT {baz: 'bar'}
 - **JSX element props should *not* be spaced** around the equals sign.
-  > ```typescript-react
+  > ```tsx
   > <input type="text" />
   > ```
 
@@ -86,7 +86,7 @@ import Foo from '@components/Foo';
   > type MyCallback = (value: string): void;
   > function myFunction(cb: MyCallback) { ... }
   HTML component props:
-  > ```typescript-react
+  > ```tsx
   > const type: ButtonHTMLAttributes<HTMLButtonElement>['type'] = 'submit';
   > <button type={ type }>
   > ```
@@ -113,8 +113,9 @@ import Foo from '@components/Foo';
 
 - **Use only functional components** where possible.
   An example component should look like this:
-  > ```typescript-react
+  > ```tsx
   > // src/components/Example/index.tsx
+  >
   > import React from "react";
   > 
   > interface TestProps {
