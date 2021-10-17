@@ -21,6 +21,11 @@ const App: React.FC = () => {
 					Hello!
 				</Button>
 			</div>
+			<div>
+				<Button role='primary'>
+					Hello!
+				</Button>
+			</div>
 		</div>
 	</div>
 	);
