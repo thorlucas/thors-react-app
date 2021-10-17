@@ -7,6 +7,23 @@ This is my minimal React application starter-kit consisting of the following sta
 - **PostCSS** with **TailwindCSS**
 - **Craco**
 
+## Aliases
+
+There are a number of path aliases defined in `tsconfig.paths.json`. The use of these aliases is heavily encouraged for readibility. You are also encouraged to add new aliases as your project structure grows.
+
+*default aliases*
+| Alias | Path |
+|--|--|
+| `@components/*` | `./src/components/*` |
+| `@UI/*` | `./src/components/UI/*` |
+
+You may use them in your import statements:
+
+```typescript
+import Foo from '@components/Foo';
+```
+
+
 ## Style Guide
 
 ### General
