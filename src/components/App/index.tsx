@@ -1,7 +1,8 @@
+import React from 'react';
+
+import Button from '@UI/Button';
 import { MyContext } from '@contexts';
 import { useWait } from '@hooks';
-import { Button } from '@UI/Button';
-import React from 'react';
 
 const App: React.FC = () => {
 	// This is an example of the usage of a custom hook. We can extract logic this way.

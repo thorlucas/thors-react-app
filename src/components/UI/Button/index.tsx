@@ -8,7 +8,7 @@ interface ButtonProps {
 	children?: React.ReactNode,
 }
 
-export const Button: React.FC<ButtonProps> = ({
+const Button: React.FC<ButtonProps> = ({
 	role = 'primary',
 	type,
 	children,
@@ -29,3 +29,5 @@ export const Button: React.FC<ButtonProps> = ({
 		</button>
 	);
 };
+
+export default Button;
