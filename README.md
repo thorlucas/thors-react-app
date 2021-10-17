@@ -20,6 +20,9 @@ There are a number of path aliases defined in `tsconfig.paths.json`. The use of 
 | `@contexts/*` | `./src/contexts/*` |
 | `@hooks` | `./src/hooks/index.ts` |
 | `@hooks/*` | `./src/hooks/*` |
+| `@adapters` | `./src/adapters/index.ts` |
+| `@adapters/*` | `./src/adapters/*` |
+
 
 You may use them in your import statements:
 
