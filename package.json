@@ -3,7 +3,8 @@
 	"version": "0.2.0",
 	"private": true,
 	"scripts": {
-		"start": "export NODE_ENV=development && webpack serve --mode=development"
+		"start": "export NODE_ENV=development && webpack serve --mode=development",
+		"build": "export NODE_ENV=production && webpack --mode=production"
 	},
 	"dependencies": {
 		"css-loader": "^6.5.1",

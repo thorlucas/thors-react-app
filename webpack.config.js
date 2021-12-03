@@ -11,7 +11,9 @@ if (!process.env.NODE_ENV) {
 	throw new Error('The NODE_ENV environment variable is required but was not specified.');
 }
 
-console.log(process.env);
+const production = process.env.NODE_ENV == 'production';
+
+const use_cdn = false;
 
 const babelOpts = {
 	presets: [
@@ -75,6 +77,8 @@ module.exports = {
 			template: './public/index.html',
 			publicPath: '/',
 		}),
+		new InterpolateHtmlPlugin(process.env),
+	].concat(use_cdn ? [
 		new WebpackCdnPlugin({
 			modules: [
 				{ name: 'react', var: 'React', path: `umd/react.${process.env.NODE_ENV}.${process.env.NODE_ENV === 'production' ? 'min.js' : 'js' }` },
@@ -82,8 +86,7 @@ module.exports = {
 			],
 			publicPath: 'node_modules',
 		}),
-		new InterpolateHtmlPlugin(process.env),
-	],
+	] : []),
 	devServer: {
 		port: 3000,
 		watchFiles: ['src/*'],
