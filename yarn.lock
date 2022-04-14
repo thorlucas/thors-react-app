@@ -261,6 +261,11 @@
     estree-walker "^2.0.1"
     picomatch "^2.2.2"
 
+"@tsconfig/vite-react@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@tsconfig/vite-react/-/vite-react-1.0.0.tgz#020cf5a40b179768a34612b19fa3c219b42a6df5"
+  integrity sha512-GHiDPI2dWPqyotRcqvGijlMG9j02aabFx+GxkTXBJWiw02jbkvjJ2uoptrAzJEYfbGmxrbuR+m1m262hkyputA==
+
 "@types/prop-types@*":
   version "15.7.5"
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.5.tgz#5f19d2b85a98e9558036f6a3cacc8819420f05cf"
