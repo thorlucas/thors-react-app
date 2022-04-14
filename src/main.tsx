@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import './index.css';
 
 const App = () => {
 	return (
 		<>
-			Hi!
+			<span className="text-red-500">Hi!</span>
 		</>
 	);
 }
