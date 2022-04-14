@@ -4,7 +4,13 @@
 		"useDefineForClassFields": true,
 		"types": [
 			"vite/client"
-		]
+		],
+		"paths": {
+			"@components/": ["./src/components/*"],
+			"@assets/": ["./src/assets/*"],
+			"@pages/*": ["./src/pages/*"],
+			"@/": ["./src/"]
+		}
 	},
 	"references": [
 		{
